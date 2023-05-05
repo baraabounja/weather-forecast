@@ -1,0 +1,128 @@
+body {
+    /* background-color: rgb(95, 141, 205); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./havaDurumuAna.webp");
+}
+
+.all-div {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-div {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 170px;
+    line-height: 35px;
+}
+
+.interDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.inputH {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(234, 237, 242);
+    border: solid 1px rgb(95, 141, 205);
+    border-radius: 30px;
+    width: 300px;
+    height: 55px;
+}
+
+.inputH:hover {
+    border: solid 1px rgb(95, 141, 205);
+
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(52, 114, 200);
+    background-color: rgb(234, 237, 242);
+    border: solid 1px rgb(95, 141, 205);
+    border-radius: 30px;
+    width: 170px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+
+img {
+    margin-left: 15px;
+    width: 210px;
+    height: 150px;
+}
+
+.tempDiv {
+    text-align: center;
+}
+
+.country-p {
+    margin-top: 0px;
+}
+
+.country-p,
+.temp-p,
+.condition-p,
+.date {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.humidity-p,
+.wind-p,
+.feels-p {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    /* text-decoration-line: underline; */
+
+}
+
+@media (max-width:760px) {
+    body {
+        background-image: url("./weatherMedia1.jpg");
+    }
+
+    .side-div {
+        width: 80%;
+        display: flex;
+        /* justify-content: center; */
+        position: absolute;
+        margin-right: 50%;
+        margin-top: 350px;
+        text-decoration: dashed;
+    }
+
+    .humidity-p,
+    .wind-p,
+    .feels-p {
+        padding-right: 40px;
+        font-size: 17px;
+
+    }
+
+    .interDiv {
+
+        margin-top: 130px;
+    }
+}
